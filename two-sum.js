@@ -46,3 +46,12 @@ const twoSum2 = function (numbers, target){
 }
 
 console.log(twoSum2(arr, 156))
+
+const fib = function(n){
+    let fib = [0,1]
+    for(let i=2; i<=n; i+=1){
+        fib.push(fib[i-1] + fib[i-2])
+    }
+}
+
+console.log(fib(5))
