@@ -22,7 +22,7 @@ console.log(twoSums([1, 2 ,3, 4, 5, 6, 7], 3));
 
 function fibo(number){
    let a = 0, b = 1, c = number;
-   for(let i =2; i<=number; i++){
+   for(let i=2; i<=number; i++){
     c = a+b;
     a = b;
     b = c;
@@ -48,10 +48,11 @@ const twoSum2 = function (numbers, target){
 console.log(twoSum2(arr, 156))
 
 const fib = function(n){
-    let fib = [0,1]
+    let collection = [0, 1]
     for(let i=2; i<=n; i+=1){
-        fib.push(fib[i-1] + fib[i-2])
+        collection.push(collection[i-1] + collection[i-2]);
     }
+    return collection[n]
 }
 
-console.log(fib(5))
+console.log(fib(6))
